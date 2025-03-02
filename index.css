@@ -1,0 +1,46 @@
+.pirmas {
+ background-color: white;
+ padding: 15px;
+ border-radius: 20px;
+ transition: background-color 0.5s ease;
+}
+
+.pirmas:hover {
+    background-color: blue;
+    color: white;
+}
+
+.antras {
+    width: 100%;
+    height: 200px;
+    background-color: coral;
+    /* Pirma uzduotis */
+    animation: animacija 5s infinite;
+    /* antra u=duotis */
+    animation: animacija2 4s infinite;
+}
+
+@keyframes animacija {
+    from{ background-color: coral;}
+    to {background-color: white;}
+}
+
+@keyframes animacija2 {
+    from { background-color: red;}
+    to {background-color: blue;}
+}
+
+
+
+.trecias {
+    padding: 15px;
+    background-color: aqua;
+    border-radius: 200px;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.2s;
+}
+
+.trecias:active {
+    transform: scale(0.5,0.5);
+}
